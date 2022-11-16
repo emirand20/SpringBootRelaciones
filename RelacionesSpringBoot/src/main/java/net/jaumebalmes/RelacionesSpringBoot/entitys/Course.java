@@ -15,8 +15,8 @@ public class Course {
     @Id // clau a la taula de la BD
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-
     private String title;
+    
     @OneToMany(mappedBy = "course")
     @JsonIgnore
     private List<CourseMaterial> courseMaterial;
