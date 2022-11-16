@@ -16,11 +16,11 @@ public class CourseMaterialController {
     @Autowired
     CourseMaterialRepository courseMaterialRepo;
 
-    @GetMapping("courseMaterial/{id}")
-    public CourseMaterial getCourseMaterial(@PathVariable long id) {
-
-        return courseMaterialRepo.findById(id).get();
-    }
+//    @GetMapping("courseMaterial/{id}")
+//    public CourseMaterial getCourseMaterial(@PathVariable long id) {
+//        CourseMaterial courseMaterial = courseMaterialRepo.findById(id).get();
+//        return courseMaterial;
+//    }
 
     @GetMapping("courseMaterial")
     public Iterable<CourseMaterial> getCoursesMaterials() {
